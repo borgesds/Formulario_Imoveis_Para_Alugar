@@ -1,0 +1,17 @@
+body {
+    background-image: url(../image/casa.jpg);
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: center center;
+}
+
+.credit {
+    background: $secondary-color;
+    font-size: 15px;
+    font-style: italic;
+    color: $primary-color;
+    padding: 100px;
+    border-radius: 10px;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
