@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="js/property.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/main.js"></script>
+    <title>Casa para Alugar</title>
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1>Alugueis de Imóveis</h1>
+        </header>
+
+        <main class="main">
+            <div class="credit">
+                <form onsubmit="app.addProperty()">
+                    <h3>Formulário</h3>
+                    <label>Tipo: </label>
+                    <select name="kind">
+                        <option value="Apartamento">Apartamento</option>
+                        <option value="Casa">Casa</option>
+                        <option value="Kitnet">Kitnet</option>
+                        <option value="Sitio">Sitio</option>
+                        <option value="Casa De Festa">Casa de Festa</option>
+                    </select>
+                    
+                    <p>
+                        <label>Área: </label>
+                        <input type="number" name="area" step="any" min="0">
+                    </p>
+
+                    <p>
+                        <label>Endereço: </label>
+                        <input type="text" name="address">
+                    </p>
+
+                    <p>
+                        <input type="checkbox" name="rented"> Alugado
+                        
+                    </p>
+
+                    <p>
+                        <button type="submit">Salvar</button>
+                        <button type="button" onclick="app.clearForm()">Limpar</button>
+                    </p>
+
+                    <h3>Imóveis Cadastrados</h3>
+                    <ul id="properties"></ul>
+                    
+                </form>
+            </div>
+        </main>
+
+        <footer class="footer">
+            <address>
+                Criação e Desenvolvimento: <a href="https://www.linkedin.com/in/andreborgesds/">André Borges</a> &copy; 2022 V1.0
+            </address>
+        </footer>
+    </div>
+</body>
+</html>
